@@ -8,12 +8,7 @@ myBubbleSort(arrTest)
 console.log(arrTest);
 
 
-if (arrTest[0] == arrResult[0]) {
-    console.log("Test passed");
-} else {
-    console.log("Test failed");
-}
-
+console.assert(arrTest[0] == arrResult[0], "Test passed");
 // ---> for JEST npm i jest-cli -g
 // test("Returns a sorted array", () => {
 //     expect(myBubbleSort(arrTest)).toBe(arrResult);
